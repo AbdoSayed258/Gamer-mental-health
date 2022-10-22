@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: whitesmoke;
+}
+.first{
+    margin: 50px 50px 0 50px;
+}
+h3{
+    padding: 80px;
+    margin-top: 20px;
+    text-transform: capitalize;
+
+}
+span{
+    color: red;
+}
+.accept{
+    color: rgb(31, 109, 135);
+    text-transform: capitalize;
+    font-size: 1.1em;
+    padding: 50px 30px;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+.un{
+    font-size: 1em;
+    color: rgb(31, 109, 135);
+    margin-left: 50px;
+}
+.une{
+    font-size: 1em;
+    color: rgb(31, 109, 135);
+    opacity: .8;
+}
+.t1,.t2 ,.t3{
+    margin-top: 5px;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 20%;
+}
+th,td{
+    color: rgb(31, 109, 135);
+    padding: 10px;
+}
+.t{
+    padding-left: 35px;
+}
+th td input{
+    font-size: 1.2em;
+}
+.td{
+    display: inline-block;
+    width: 206px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.second{
+    margin: 50px 50px 0 50px;
+}
+.second p{
+    color: rgb(31, 109, 135);
+    text-transform: capitalize;
+    font-size: 1.1em;
+    padding: 50px 30px;
+    letter-spacing: .5px;
+    font-weight: 500;   
+}
+.second .div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.second input{
+    margin: 10px;
+}
+.second label{
+    color: rgb(31, 109, 135);
+    opacity: .8;
+}
+.third .on{
+    color: rgb(31, 109, 135);
+    text-transform: capitalize;
+    font-size: 1.1em;
+    padding: 50px 30px;
+    letter-spacing: .5px;
+    font-weight: 500;   
+}
+.third h3{
+    padding: 50px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.third .pp{
+    position: absolute;
+    top: 267%;
+    left: 5%;
+    padding: 10px;
+    color: rgb(31, 109, 135);
+
+}
+.third textarea{
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-left: 50px;
+    opacity: .6;
+    border-bottom: 1px solid rgb(31, 109, 135);
+}
+.fourth h3{
+    margin-bottom: -20px;
+}
+.fourth div{
+    color: rgb(31, 109, 135);
+    margin-left: 70px;
+    padding: 10px;
+}
+.fifth p{
+    color: rgb(31, 109, 135);
+    position: absolute;
+    top: 255%;
+    left: 6%;
+}
+.fifth .ta{
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-left: 80px;
+    opacity: .6;
+    border-bottom: 1px solid rgb(31, 109, 135);
+}
+.sixth h3{
+    margin-bottom: -20px;
+}
+.sixth div{
+    color: rgb(31, 109, 135);
+    margin-left: 70px;
+    padding: 10px;
+}
+.seventh h3{
+    margin-bottom: -25px;
+}
+.seventh div{
+    color: rgb(31, 109, 135);
+    margin-left: 70px;
+    padding: 10px;
+}
+.eighth h3{
+    margin-bottom: -25px;
+}
+.eighth div{
+    color: rgb(31, 109, 135);
+    margin-left: 70px;
+    padding: 10px;
+}
+.nineth h3{
+    margin-bottom: -40px;
+}
+.nineth textarea{
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-left: 80px;
+    opacity: .6;
+    border-bottom: 1px solid rgb(31, 109, 135);
+}
+.tw p{
+    position: absolute;
+    top: 510%;
+    left: 5%;
+    padding: 10px;
+    color: rgb(31, 109, 135);
+}
+.tw textarea{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -20px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-left: 80px;
+    opacity: .6;
+    border-bottom: 1px solid rgb(31, 109, 135);
+}
+.submit{
+    border: none;
+    color: white;
+    background-color: rgb(31, 109, 135);
+    padding: 10px;
+    cursor: pointer;
+    margin: 30px 100px;
+    border-radius: 10px;
+    transition: ease-in-out .5s;
+}
+/*
+.submit:hover{
+    background-color: gray;
+}
+*/
+.extent h3{
+    margin-bottom: -30px;
+}
+.extent p{
+    position: absolute;
+    top: 721%;
+    left: 5%;
+    padding: 10px;
+    color: rgb(31, 109, 135);
+}
+.extent div{
+    color: rgb(31, 109, 135);
+    margin-left: 100px;
+    padding: 10px;
+}
+.gender h3{
+    margin-bottom: -50px;
+}
+.gender div{
+    color: rgb(31, 109, 135);
+    margin-left: 100px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.age h3{
+    margin-bottom: -30px;
+}
+.age textarea{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -20px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-left: 80px;
+    opacity: .6;
+    border-bottom: 1px solid rgb(31, 109, 135);
+}
+.last h3{
+    margin-bottom: -50px;
+}
+.last div{
+    color: rgb(31, 109, 135);
+    margin-left: 100px;
+    padding: 10px;
+    text-transform: capitalize;
+}

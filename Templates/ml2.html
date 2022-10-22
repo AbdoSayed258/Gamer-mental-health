@@ -1,0 +1,516 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='m2.css') }}">
+    <title>ML</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('result')}}">
+    <div class="first">
+    <p class="accept">by clicking on the accept button, you indicate that you agree to 
+        participate in the study and that you understand the information 
+        in this consent form. you agree that you are at least 18 years of age. 
+        you have not waived any legal rights you otherwise would have as a participant in a research study.
+    </p>
+    <input required class="un" id="1" type="radio" value="Accept" name="accept2">
+    <label class="une" for="1">Accept</label>
+    </div>
+    <h3>over the last 2 weeks, how often have you been bothered by the following problems? <span>*</span></h3>
+    <table class="t1">
+        <tr>
+            <td></td>
+            <td>Not at all</td>
+            <td>Several days</td>
+            <td>Over half the days</td>
+            <td>Nearly ever days</td>
+        </tr>
+        <tr>
+            <td class="td">1. Feeling nervous,anxious,or on edge</td>
+            <td class="t"><input required name="gad1" type="radio" value="0"></td>
+            <td class="t"><input required name="gad1" type="radio" value="1"></td>
+            <td class="t"><input required name="gad1" type="radio" value="2"></td>
+            <td class="t"><input required name="gad1" type="radio" value="3"></td>
+        </tr>
+        <tr>
+            <td class="td">2. Not being able to stop or control worrying</td>
+            <td class="t"><input  name="gad2" type="radio" value="0"></td>
+            <td class="t"><input  name="gad2" type="radio" value="1"></td>
+            <td class="t"><input  name="gad2" type="radio" value="2"></td>
+            <td class="t"><input  name="gad2" type="radio" value="3"></td>
+        </tr>
+        <tr>
+            <td class="td">3. Worrying too much about different things</td>
+            <td class="t"><input required name="gad3" type="radio" value="0"></td>
+            <td class="t"><input required name="gad3" type="radio" value="1"></td>
+            <td class="t"><input required name="gad3" type="radio" value="2"></td>
+            <td class="t"><input required name="gad3" type="radio" value="3"></td>
+        </tr>
+        <tr>
+            <td class="td">4. Trouble relaxing</td>
+            <td class="t"><input required name="gad4" type="radio" value="0"></td>
+            <td class="t"><input required name="gad4" type="radio" value="1"></td>
+            <td class="t"><input required name="gad4" type="radio" value="2"></td>
+            <td class="t"><input required name="gad4" type="radio" value="3"></td>
+        </tr>
+        <tr>
+            <td class="td">5. Being so restless that it's hard to sit still</td>
+            <td class="t"><input required name="gad5" type="radio" value="0"></td>
+            <td class="t"><input required name="gad5" type="radio" value="1"></td>
+            <td class="t"><input required name="gad5" type="radio" value="2"></td>
+            <td class="t"><input required name="gad5" type="radio" value="3"></td>
+        </tr>
+        <tr>
+            <td class="td">6. Becoming easily annoyed or irritable</td>
+            <td class="t"><input required name="gad6" type="radio" value="0"></td>
+            <td class="t"><input required name="gad6" type="radio" value="1"></td>
+            <td class="t"><input required name="gad6" type="radio" value="2"></td>
+            <td class="t"><input required name="gad6" type="radio" value="3"></td>
+        </tr>
+        <tr>
+            <td class="td">7. Felling afraid as if somthing awful might happen</td>
+            <td class="t"><input required name="gad7" type="radio" value="0"></td>
+            <td class="t"><input required name="gad7" type="radio" value="1"></td>
+            <td class="t"><input required name="gad7" type="radio" value="2"></td>
+            <td class="t"><input required name="gad7" type="radio" value="3"></td>
+        </tr>
+    </table>
+    <div class="second">
+        <p>if you checked off any problems, how difficult have these made it for you to do your work, take care of things at home, or get
+            along with other people?
+        </p>
+        <div class="div">
+        <div>
+        <input name="gade" required  id="2" value="Not difficult at all" type="radio">
+        <label for="2">Not difficult at all</label>
+        </div>
+        <div>
+        <input required name="gade" id="3"  value="Somewhat difficult" type="radio">
+        <label for="3">Somewhat difficult</label>
+        </div>
+        <div>
+        <input required name="gade" id="4"  value="Very difficult" type="radio">
+        <label for="4">Very difficult</label>
+        </div>
+        <div>
+        <input required id="5" name="gade" value="Extremely difficult" type="radio">
+        <label for="5">Extremely difficult</label>
+        </div>
+        </div>
+    </div>
+    <h3>DIRECTIONS: Below are five statements with which you may agree or disagree. Using the 1-7<br>
+        scale below, indicate your agreement with each item by crossing the appropriate item. Please<br>
+        be open and honest in your responding 
+    </h3>
+    <table class="t2">
+            <tr>
+                <td></td>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Slightly Disagree</td>
+                <td>Neither Agree or Disagree</td>
+                <td>Slightly Agree</td>
+                <td>Agree</td>
+                <td>Strongly Agree</td>
+            </tr>
+            <tr>
+                <td class="td">1. In most ways my life is close to my ideal.</td>
+                <td class="t" ><input  required name="SWL1" value="1" type="radio"></td>
+                <td class="t" ><input  required name="SWL1" value="2" type="radio"></td>
+                <td class="t" ><input  required name="SWL1" value="3" type="radio"></td>
+                <td class="t" ><input  required name="SWL1" value="4" type="radio"></td>
+                <td class="t" ><input  required name="SWL1" value="5" type="radio"></td>
+                <td class="t" ><input  required name="SWL1" value="6" type="radio"></td>
+                <td class="t" ><input  required name="SWL1" value="7" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="td">2. The conditions of my life are excellent</td>
+                <td class="t" ><input  required name="SWL2" value="1" type="radio"></td>
+                <td class="t" ><input  required name="SWL2" value="2" type="radio"></td>
+                <td class="t" ><input  required name="SWL2" value="3" type="radio"></td>
+                <td class="t" ><input  required name="SWL2" value="4" type="radio"></td>
+                <td class="t" ><input  required name="SWL2" value="5" type="radio"></td>
+                <td class="t" ><input  required name="SWL2" value="6" type="radio"></td>
+                <td class="t" ><input  required name="SWL2" value="7" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="td">3.1 am satisfied with life</td>
+                <td class="t" ><input  required name="SWL3" value="1" type="radio"></td>
+                <td class="t" ><input  required name="SWL3" value="2" type="radio"></td>
+                <td class="t" ><input  required name="SWL3" value="3" type="radio"></td>
+                <td class="t" ><input  required name="SWL3" value="4" type="radio"></td>
+                <td class="t" ><input  required name="SWL3" value="5" type="radio"></td>
+                <td class="t" ><input  required name="SWL3" value="6" type="radio"></td>
+                <td class="t" ><input  required name="SWL3" value="7" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="td">4. So far I have gotten the important things I want in life.</td>
+               <td class="t" ><input  required name="SWL4" value="1" type="radio"></td>
+               <td class="t" ><input  required name="SWL4" value="2" type="radio"></td>
+               <td class="t" ><input  required name="SWL4" value="3" type="radio"></td>
+               <td class="t" ><input  required name="SWL4" value="4" type="radio"></td>
+               <td class="t" ><input  required name="SWL4" value="5" type="radio"></td>
+               <td class="t" ><input  required name="SWL4" value="6" type="radio"></td>
+               <td class="t" ><input  required name="SWL4" value="7" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="td">5. If I could live my life over, I would change almost nothing</td>
+                <td class="t" ><input  required name="SWL5" value="1" type="radio"></td>
+                <td class="t" ><input  required name="SWL5" value="2" type="radio"></td>
+                <td class="t" ><input  required name="SWL5" value="3" type="radio"></td>
+                <td class="t" ><input  required name="SWL5" value="4" type="radio"></td>
+                <td class="t" ><input  required name="SWL5" value="5" type="radio"></td>
+                <td class="t" ><input  required name="SWL5" value="6" type="radio"></td>
+                <td class="t" ><input  required name="SWL5" value="7" type="radio"></td>
+                
+            </tr>
+        </table>
+
+    <div class="third">
+    <p class="on">the next set of questions will focus on the game which you play the most currently. if you play more than game equally often, please choose one of them.
+    </p>
+    <h3>which game to you play the most regularly at the moment? <span>*</span></h3>
+    <p class="pp">e.g. "CS:GO","League of Legends","Starcraft 2","FIFA"</p>
+    <textarea name="game" id="" cols="1" rows="1">Meine Antwort</textarea>
+    </div>
+    <div class="fourth">
+        <h3>which platform do you use to play? <span>*</span></h3>
+        <div>
+            <input required name="pf" id="6" value="PC" type="radio">
+            <label for="6">PC</label>
+        </div>
+        <div>
+            <input required name="pf" id="7" value="Console(PS,Xbox,...)" type="radio">
+            <label for="7">Console(PS,Xbox,...)</label>
+        </div>
+        <div>
+            <input required name="pf" id="8" value="SmartPhone" type="radio">
+            <label for="8">SmartPhone</label>
+        </div>
+    </div>
+
+    <div class="sixth">
+        <h3>how do you play the most? <span>*</span></h3>
+        <div>
+            <input required name="play" value="SinglePlayer" id="9" type="radio">
+            <label for="9">SinglePlayer</label>
+        </div>
+        <div>
+            <input required name="play" value="MultiPlayer-offline(People in the same room)" id="10" type="radio">
+            <label for="10">MultiPlayer-offline(People in the same room)</label>
+        </div>
+        <div>
+            <input required name="play" value="MultiPlayer-online-with strangers" id="11" type="radio">
+            <label for="11">MultiPlayer-online-with strangers</label>
+        </div>
+        <div>
+            <input required name="play" valuee="MultiPlayer-online-with online acquaintances or teammates" id="12" type="radio">
+            <label for="12">MultiPlayer-online-with online acquaintances or teammates</label>
+        </div>
+        <div>
+            <input required name="play" value="MultiPlayer-online-with real life friends" id="13" type="radio">
+            <label for="13">MultiPlayer-online-with real life friends</label>
+        </div>
+        <div>
+            <input required name="play" value="Other" id="14" type="radio">
+            <label for="14">Other</label>
+        </div>
+    </div>
+    <div class="seventh">
+        <h3>Is playing this game your hobby or do you make money from it? <span>*</span></h3>
+        <div>
+            <input required name="hb" id="15" value="I earn a living by playing this game" type="radio">
+            <label for="15">I earn a living by playing this game</label>
+        </div>
+        <div>
+            <input required name="hb" id="16" value="I play mostly for fun but earn a little on the side(tournament winnings, streaming, etc)" type="radio">
+            <label for="16">I play mostly for fun but earn a little on the side(tournament winnings, streaming, etc)</label>
+        </div>
+        <div>
+            <input required name="hb"  value="I play for fun" id="17" type="radio">
+            <label for="17">I play for fun</label>
+        </div>
+        <div>
+            <input required name="hb" value="Other" id="18" type="radio">
+            <label for="18">Other</label>
+        </div>
+    </div>
+    <div class="eighth">
+        <h3>What is most important to you when playing? <span>*</span></h3>
+        <div>
+            <input required name="whyplay" value="Winning" id="19" type="radio">
+            <label for="19">Winning</label>
+        </div>
+        <div>
+            <input required name="whyplay" value="Improving" id="20" type="radio">
+            <label for="20">Improving</label>
+        </div>
+        <div>
+            <input required name="whyplay" id="21" value="Relaxing" type="radio">
+            <label for="21">Relaxing</label>
+        </div>
+        <div>
+            <input required name="whyplay" id="22" value="Having Fun" type="radio">
+            <label for="22">Having Fun</label>
+        </div>
+        <div>
+            <input required name="whyplay" id="23" value="Other" type="radio">
+            <label for="23">Other</label>
+        </div>
+    </div>
+    <div class="nineth">
+        <h3>if applicable, which league are you currently in? <span>*</span></h3>
+        <textarea name="ta3" id="" cols="1" rows="1">Meine Antwort</textarea>
+    </div>
+    <div class="tw">
+        <h3>in addition to playing, how many hours a week do you spend on watching online player / tournament streams / replays / demos, giving or receiving coaching? <span>*</span></h3>
+        <p>e.g. "15", if you don't, then answer "0"</p>
+        <textarea name="ta4" id="" cols="1" rows="1">Meine Antwort</textarea>
+    </div>
+    <h3>5. Quetionnaire C<br>
+        Questionnaire C was the Social Phobia Inventory:<br>
+        Connor, K. M., Davidson, J. R., Churchill, L. E., Sherwood, A., Weisler, R. H., & FOA, E. (2000).<br>
+        Psychometric properties of the social phobia inventory (SPIN). The British Journal of<br>
+        Psychiatry, 176(4), 379-386.
+    </h3>
+    <table class="t3">
+        <tr>
+            <td></td>
+            <td>Not at all</td>
+            <td>A little bit</td>
+            <td>Somewhat</td>
+            <td>Very much</td>
+            <td>Extremly</td>
+
+        </tr>
+        <tr>
+            <td class="td">1. I am afraid of people in authority.</td>
+            <td class="t"><input required name="spin1" type="radio" value="0"></td>
+            <td class="t"><input required name="spin1" type="radio" value="1"></td>
+            <td class="t"><input required name="spin1" type="radio" value="2"></td>
+            <td class="t"><input required name="spin1" type="radio" value="3"></td>
+            <td class="t"><input required name="spin1" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">2. I am bothered by blushing in front of people</td>
+            <td class="t"><input required name="spin2" type="radio" value="0"></td>
+            <td class="t"><input required name="spin2" type="radio" value="1"></td>
+            <td class="t"><input required name="spin2" type="radio" value="2"></td>
+            <td class="t"><input required name="spin2" type="radio" value="3"></td>
+            <td class="t"><input required name="spin2" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">3. Parties and social events scare me</td>
+            <td class="t"><input required name="spin3" type="radio" value="0"></td>
+            <td class="t"><input required name="spin3" type="radio" value="1"></td>
+            <td class="t"><input required name="spin3" type="radio" value="2"></td>
+            <td class="t"><input required name="spin3" type="radio" value="3"></td>
+            <td class="t"><input required name="spin3" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">4. I avoid talking to people I don't know</td>
+            <td class="t"><input required name="spin4" type="radio" value="0"></td>
+            <td class="t"><input required name="spin4" type="radio" value="1"></td>
+            <td class="t"><input required name="spin4" type="radio" value="2"></td>
+            <td class="t"><input required name="spin4" type="radio" value="3"></td>
+            <td class="t"><input required name="spin4" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">5. Being criticized scares me a lot</td>
+            <td class="t"><input required name="spin5" type="radio" value="0"></td>
+            <td class="t"><input required name="spin5" type="radio" value="1"></td>
+            <td class="t"><input required name="spin5" type="radio" value="2"></td>
+            <td class="t"><input required name="spin5" type="radio" value="3"></td>
+            <td class="t"><input required name="spin5" type="radio" value="4"></td>
+            
+        </tr>
+        <tr>
+            <td class="td">6. I avoid doing things or speaking to people for fear of embarrassment</td>
+            <td class="t"><input required name="spin6" type="radio" value="0"></td>
+            <td class="t"><input required name="spin6" type="radio" value="1"></td>
+            <td class="t"><input required name="spin6" type="radio" value="2"></td>
+            <td class="t"><input required name="spin6" type="radio" value="3"></td>
+            <td class="t"><input required name="spin6" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">7. Sweating in front of people causes me distress</td>
+            <td class="t"><input required name="spin7" type="radio" value="0"></td>
+            <td class="t"><input required name="spin7" type="radio" value="1"></td>
+            <td class="t"><input required name="spin7" type="radio" value="2"></td>
+            <td class="t"><input required name="spin7" type="radio" value="3"></td>
+            <td class="t"><input required name="spin7" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">8. I avoid going to parties</td>
+           <td class="t"><input required name="spin8" type="radio" value="0"></td>
+           <td class="t"><input required name="spin8" type="radio" value="1"></td>
+           <td class="t"><input required name="spin8" type="radio" value="2"></td>
+           <td class="t"><input required name="spin8" type="radio" value="3"></td>
+           <td class="t"><input required name="spin8" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">9. I avoid activities in which l am the centre of attention</td>
+            <td class="t"><input required name="spin9" type="radio" value="0"></td>
+            <td class="t"><input required name="spin9" type="radio" value="1"></td>
+            <td class="t"><input required name="spin9" type="radio" value="2"></td>
+            <td class="t"><input required name="spin9" type="radio" value="3"></td>
+            <td class="t"><input required name="spin9" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">10. Talking to strangers scares me</td>
+            <td class="t"><input required name="spin10" type="radio" value="0"></td>
+            <td class="t"><input required name="spin10" type="radio" value="1"></td>
+            <td class="t"><input required name="spin10" type="radio" value="2"></td>
+            <td class="t"><input required name="spin10" type="radio" value="3"></td>
+            <td class="t"><input required name="spin10" type="radio" value="4"></td>
+            
+        </tr>
+        <tr>
+            <td class="td">11.|avoid having to give speeches</td>
+           <td class="t"><input required name="spin11" type="radio" value="0"></td>
+           <td class="t"><input required name="spin11" type="radio" value="1"></td>
+           <td class="t"><input required name="spin11" type="radio" value="2"></td>
+           <td class="t"><input required name="spin11" type="radio" value="3"></td>
+           <td class="t"><input required name="spin11" type="radio" value="4"></td>
+            
+        </tr>
+        <tr>
+            <td class="td">12. Iwould do anything to avoid being criticized</td>
+            <td class="t"><input required name="spin12" type="radio" value="0"></td>
+            <td class="t"><input required name="spin12" type="radio" value="1"></td>
+            <td class="t"><input required name="spin12" type="radio" value="2"></td>
+            <td class="t"><input required name="spin12" type="radio" value="3"></td>
+            <td class="t"><input required name="spin12" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">13. Heart palpitations bother me when I am around people</td>
+            <td class="t"><input required name="spin13" type="radio" value="0"></td>
+            <td class="t"><input required name="spin13" type="radio" value="1"></td>
+            <td class="t"><input required name="spin13" type="radio" value="2"></td>
+            <td class="t"><input required name="spin13" type="radio" value="3"></td>
+            <td class="t"><input required name="spin13" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">14. I am afraid of doing things when people might be watchings</td>
+            <td class="t"><input required name="spin14" type="radio" value="0"></td>
+            <td class="t"><input required name="spin14" type="radio" value="1"></td>
+            <td class="t"><input required name="spin14" type="radio" value="2"></td>
+            <td class="t"><input required name="spin14" type="radio" value="3"></td>
+            <td class="t"><input required name="spin14" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">15. Being embarrassed or looking stupid are among my worse fears</td>
+            <td class="t"><input required name="spin15" type="radio" value="0"></td>
+            <td class="t"><input required name="spin15" type="radio" value="1"></td>
+            <td class="t"><input required name="spin15" type="radio" value="2"></td>
+            <td class="t"><input required name="spin15" type="radio" value="3"></td>
+            <td class="t"><input required name="spin15" type="radio" value="4"></td>
+        </tr>
+        <tr>
+            <td class="td">16. Iavoid speaking to anyone in authority</td>
+            <td class="t"><input required name="spin16" type="radio" value="0"></td>
+            <td class="t"><input required name="spin16" type="radio" value="1"></td>
+            <td class="t"><input required name="spin16" type="radio" value="2"></td>
+            <td class="t"><input required name="spin16" type="radio" value="3"></td>
+            <td class="t"><input required name="spin16" type="radio" value="4"></td>
+            
+        </tr>
+        <tr>
+            <td class="td">17. Trembling or shaking in front of others is distressing to me</td>
+           <td class="t"><input required name="spin17" type="radio" value="0"></td>
+           <td class="t"><input required name="spin17" type="radio" value="1"></td>
+           <td class="t"><input required name="spin17" type="radio" value="2"></td>
+           <td class="t"><input required name="spin17" type="radio" value="3"></td>
+           <td class="t"><input required name="spin17" type="radio" value="4"></td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+        <div class="extent">
+            <h3>to what extent do you agree with this statement: i "m a narcissist.</h3>
+            <p>note: the word 'narcissist' means egotistical, self-focused and vain.</p>
+            <div>
+                <input required name="nar" value="1" id="200" type="radio">
+                <label for="200">1- not very true of me</label>
+            </div>
+            <div>
+                <input required name="nar" value="2" id="201" type="radio">
+                <label for="201">2 - somewhat true of me</label>
+            </div>
+            <div>
+                <input required name="nar" value="3" id="202" type="radio">
+                <label for="202">3 - moderately true of me</label>
+            </div>
+            <div>
+                <input required name="nar" value="4" id="203" type="radio">
+                <label for="203">4 - mostly true of me</label>
+            </div>
+            <div>
+                <input required name="nar" value="5" id="204" type="radio">
+                <label for="204">5 - very true of me</label>
+            </div>
+        </div>
+
+        <div class="gender">
+            <h3>your gender <span>*</span></h3>
+            <div>
+                <input required name="gn" id="205" type="radio">
+                <label for="205">male</label>
+            </div>
+            <div>
+                <input required name="gn" id="206" type="radio">
+                <label for="206">female</label>
+            </div>
+            <div>
+                <input required name="gn" id="207" type="radio">
+                <label for="207">other</label>
+            </div>
+        </div>
+
+        <div class="age">
+            <h3>your age <span>*</span></h3>
+            <textarea name="age" id="" cols="1" rows="1">Meine Antwort</textarea>
+        </div>
+
+
+        <div class="last">
+            <h3>your work status</h3>
+            <div>
+                <input required name="wk" id="208" type="radio">
+                <label for="208">student at school</label>
+            </div>
+            <div>
+                <input required name="wk" id="209" type="radio">
+                <label for="209">student at college / university</label>
+            </div>
+            <div>
+                <input required name="wk" id="210" type="radio">
+                <label for="210">employed</label>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <input name="sub" class="submit" type="submit" id="send" value="Submit">
+    </form>
+    <script>
+        let sm = document.getElementById('send');
+        sm.onclick = function(){
+            sm.style.backgroundColor = "gray";
+            setTimeout(function(){
+                sm.style.backgroundColor = "rgb(31, 109, 135)";
+            }, 5000)
+        }
+    </script>
+</body>
+</html>
